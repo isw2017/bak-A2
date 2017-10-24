@@ -6,7 +6,8 @@ import java.util.ArrayList;
  */
 
 public class Pokemon {
-	public ArrayList<Swap> swaps = new ArrayList<Swap>(); //Tauschliste
+	public static ArrayList<Swap> swaps = new ArrayList<Swap>(); //Tauschliste
+	public static ArrayList<Competition> comps = new ArrayList<Competition>(); 
 	private String name;//Variable die Pokemonname speichert
 	private Type type;	//Variable die Pokemontyp speichert
 	private int number; //Variable die Pokemonnummer speichert

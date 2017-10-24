@@ -180,8 +180,9 @@ public class Swap {
 	 */
 	public void addSwap() {
 		this.swaps.add(this.swap);
+		Pokemon.swaps.add(this.swap);
 	}
-	public static void execute(Trainer trainer1,Trainer trainer2 , Pokemon pokemon1, Pokemon pokemon2) {
+	public void execute(Trainer trainer1,Trainer trainer2 , Pokemon pokemon1, Pokemon pokemon2) {
 		if(trainer1 == trainer2  ) {
 			System.out.println("Gleicher Trainer!");
 		} else if(pokemon1.swapAllow==false || pokemon2.swapAllow == false  ){
@@ -201,6 +202,10 @@ public class Swap {
 		execute( trainer1, trainer2 , pokemon1, pokemon2);
 		makeID();
 		addSwap();
+				
+	}
+	public Swap() {
+		// dummy for extends
 				
 	}
 

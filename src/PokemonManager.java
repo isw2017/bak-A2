@@ -15,6 +15,10 @@ public class PokemonManager {
 	 public static Swap doSwap(Trainer trainer1,Trainer trainer2, Pokemon pokemon1, Pokemon pokemon2) { 
 		return new Swap( trainer1, trainer2,  pokemon1,  pokemon2);
 	}
+	 public static Competition doFight(Trainer trainer1,Trainer trainer2, Pokemon pokemon1, Pokemon pokemon2) { 
+			return new Competition(trainer1, trainer2,  pokemon1,  pokemon2);
+		}
+
 
 	/**
 	 *	@makeTrainer Methode zur erstellung eines neues Trainers
@@ -100,22 +104,23 @@ public class PokemonManager {
 		PokemonManager.matchTrainer(trainer2,pokemon5);
 		PokemonManager.matchTrainer(trainer2,pokemon6);
 		// Ausgaben
-		System.out.println("Nicos alle Pokemons:");
+		/*System.out.println("Nicos alle Pokemons:");
 		showAllPokemon(trainer2);
 		System.out.println("Tobis alle Pokemons:");
-		showAllPokemon(trainer1);
+		showAllPokemon(trainer1);*/
 		
 		doSwap(trainer1,trainer1,pokemon1,pokemon2);
 		doSwap(trainer1,trainer2,pokemon3,pokemon4);
 		pokemon4.setSwapAllow(false);
 		doSwap(trainer1,trainer2,pokemon2,pokemon4);
 		pokemon4.setSwapAllow(true);
-		doSwap(trainer1,trainer2,pokemon2,pokemon4);
-		/*
+		//doSwap(trainer1,trainer2,pokemon2,pokemon4);
+		doFight(trainer1,trainer2,pokemon2,pokemon4);
+		
 		System.out.println("Nicos alle Pokemons nach dem swap:");
 		showAllPokemon(trainer2);
 		System.out.println("Tobis alle Pokemons nach dem swap:");
-		showAllPokemon(trainer1); */
+		showAllPokemon(trainer1); 
 	}
 
 }
