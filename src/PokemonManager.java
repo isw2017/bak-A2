@@ -1,11 +1,7 @@
 /**
- * 
- */
-
-/**
- * @author Tobias Bak
- *
- */
+* @author Tobias Bak
+*
+*/
 public class PokemonManager {
 	/**
 	 *	@makeTrainer Methode zur erstellung eines neues Trainers
