@@ -1,16 +1,22 @@
 /**
- * 
+* Classname Trainer
+*
+ * Version 1.0
+ * @author Tobias Bak
+ * Copyright MIT
  */
-import java.util.*;
-/**
- * @author Tobias Bak 
- *
- */
-public class Trainer {
 
-	private String firstname;//Variable die Trainer Vorname speichert
-	private String lastname;	//Variable die Trainer Nachname speichert
-	public ArrayList<Pokemon> poks = new ArrayList<Pokemon>(); //Liste von Pokemons
+import java.util.*;
+
+public class Trainer {
+  
+  /**
+  * @class. Trainer gets (String,String).
+  */
+  
+private String firstname;//Variable die Trainer Vorname speichert
+private String lastname;	//Variable die Trainer Nachname speichert
+public ArrayList<Pokemon> poks = new ArrayList<Pokemon>(); //Liste von Pokemons
 	
 	/**
 	 * 
