@@ -54,8 +54,8 @@ public class Competition extends Swap {
   
   public Competition(Trainer trainer1,Trainer trainer2 , Pokemon pokemon1, Pokemon pokemon2) {
     super();
-    double trainer1score = Math.random() * typeConvert(pokemon1) * 100;
-    double trainer2score = Math.random() * typeConvert(pokemon2) * 100;
+    double trainer1score = Math.random() * typeConvert(pokemon1) * 1000;
+    double trainer2score = Math.random() * typeConvert(pokemon2) * 1000;
     if (trainer1score > trainer2score) {
       sieger = trainer1;
       siegpok = pokemon1;
@@ -69,7 +69,7 @@ public class Competition extends Swap {
     }
     this.execute(sieger,verlierer, siegpok, verpok);
     addComps();
-    System.out.println(Math.random());
+    //System.out.println(Math.random());
   }
   
   /**
@@ -107,7 +107,7 @@ public class Competition extends Swap {
   * @main do nothing.
   */
   public static void main(String[] args) {
-    // do Nothing in main
+    // do nothing in main
   }
 
 }

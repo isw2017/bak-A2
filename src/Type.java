@@ -4,6 +4,6 @@
 * Copyright MIT
 * @Type public enum Type.[fire,water,poison]
 */
-public enum Type{
+public enum Type {
 fire, water, poison
 }
